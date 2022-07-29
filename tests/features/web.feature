@@ -1,27 +1,30 @@
-@web @duckduckgo
-Feature: DuckDuckGo Web Browsing
-  As a web surfer,
-  I want to find information online,
-  So I can learn new things and get tasks done.
-
+Feature: Open DemoQA Login Page
+  As an Automation Engineer,
+  I want to fill student registration form,
+  So I can learn pytest-bdd.
 
   Background:
-    Given the DuckDuckGo home page is displayed
+    Given the DemoQA home page is displayed
+
+  Scenario: Enter form details
+    When the user enters first name "Bisma"
+    And the user enters last name "Latif"
+    And the user enters email "bismalatif@yopmail.com"
+    And the user selects the gender "female"
+    And the user enters phone number "11111111"
+    And the user enters address "address--005street"
+    And the user select hobby "Reading"
+    And the user selects subject "maths"
+    And the user uploads picture "C:\\Users\\bisma.latif\\Desktop\\12323.png"
+    And the user selects dateofbirth "20-May-2002"
+    Then close the browser
 
 
-  Scenario: Basic DuckDuckGo Search
-    When the user searches for "panda"
-    Then results are shown for "panda"
 
 
-  Scenario: Lengthy DuckDuckGo Search
-    When the user searches for the phrase:
-      """
-      When in the Course of human events, it becomes necessary for one people
-       to dissolve the political bands which have connected them with another,
-       and to assume among the powers of the earth, the separate and equal
-       station to which the Laws of Nature and of Nature's God entitle them,
-       a decent respect to the opinions of mankind requires that they should
-       declare the causes which impel them to the separation.
-      """
-    Then one of the results contains "Declaration of Independence"
+
+
+
+
+
+    

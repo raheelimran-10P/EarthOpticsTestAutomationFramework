@@ -1,0 +1,24 @@
+Index: tests/features/newweb.feature
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tests/features/newweb.feature b/tests/features/newweb.feature
+--- a/tests/features/newweb.feature	
++++ b/tests/features/newweb.feature	(date 1655128116700)
+@@ -3,10 +3,11 @@
+   I want to find information online,
+   So I can learn new things and get tasks done.
+ 
+-
+-  Scenario Outline: Basic DuckDuckGo Search
+-    Given the Google home page is displayed
++Background:
++  Given the Google home page is displayed
++
++
++Scenario: Basic Google Search
+     When the user searches for "panda"
+     Then results are shown for "panda"
+-    Examples:
+ 
