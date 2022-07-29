@@ -12,12 +12,6 @@ The TAU videos and transcripts use the old style of code,
 but the example code here now uses the new style of code.
 Below is an example of the new style of code needed:
 
-```python
-@given("the basket has 2 cucumbers", target_fixture='basket')
-def basket():
-    return CucumberBasket(initial_count=2)
-```
-
 ## Setup
 This project requires an up-to-date version of Python 3.
 It also uses [pipenv](https://pipenv.readthedocs.io/) to manage packages.
