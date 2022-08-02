@@ -14,10 +14,10 @@ To set up this project on your local machine:
 
 ## Running Tests
 Run tests simply using the `pytest` command.
+
 Depending upon your environment, it may be better to use `python -m pytest`.
 If you are using `pipenv`, then run `pipenv run python -m pytest`.
-Use the "-k" option to filter tests by tags.
-If you are using `pipenv`, then run `pipenv run python -m pytest`.
+
 To Run parallel test install pytest xdist using command `pip install pytest-xdist`
 To run parallel tests run command `pipenv run python -m pytest -n 2`
 
