@@ -9,7 +9,7 @@ It also uses [pipenv](https://pipenv.readthedocs.io/) to manage packages.
 To set up this project on your local machine:
 1. Clone it from this GitHub repository and open the project in the terminal.
 2. Run `pipenv install` from the command line in the project's root directory (it will create virtual env with all dependencies available in the PipFile).
-3. After virtual env created, select it on your IDE.
+3. After virtual env created, select it on your IDE or To activate this project's virtualenv , run `pipenv shell`.
 4. For Web UI tests, install the appropriate browser and WebDriver executable.
    * These tests use Firefox and [geckodriver](https://github.com/mozilla/geckodriver/releases).
 
