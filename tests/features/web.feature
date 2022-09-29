@@ -15,7 +15,7 @@ Feature: Open DemoQA Login Page
     And the user enters address "address--005street"
     And the user select hobby "Reading"
     And the user selects subject "maths"
-    And the user uploads picture "C:\\Users\\bisma.latif\\Desktop\\12323.png"
+    And the user uploads picture "/home/raheel/EarthOpticsTestAutomationFramework/assets/1234.png"
     And the user selects dateofbirth "20-May-2002"
     Then close the browser
 
