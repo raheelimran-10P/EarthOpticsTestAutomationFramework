@@ -3,6 +3,8 @@ import requests
 
 from pytest_bdd import given, parsers
 from selenium import webdriver
+from webdriver_manager.firefox import GeckoDriverManager
+from webdriver_manager.chrome import ChromeDriverManager
 
 # Constants
 
@@ -25,7 +27,8 @@ def browser():
     # For this example, we will use Firefox
     # You can change this fixture to use other browsers, too.
     # A better practice would be to get browser choice from a config file.
-    b = webdriver.Firefox()
+    #b = webdriver.Firefox();
+    b = webdriver.Chrome(executable_path=ChromeDriverManager().install())
     b.implicitly_wait(10)
     yield b
 
